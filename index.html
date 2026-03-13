@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Paula Opurum | Developer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:'Inter',sans-serif;
+background:#fff7fb;
+color:#3d2b35;
+line-height:1.7;
+}
+
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 9%;
+background:white;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:1.2rem;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:28px;
+}
+
+nav a{
+text-decoration:none;
+color:#3d2b35;
+font-size:.9rem;
+font-weight:500;
+}
+
+
+header{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding-top:120px;
+background:linear-gradient(180deg,#ffe6f1,#fff7fb);
+}
+
+header h1{
+font-family:'Playfair Display',serif;
+font-size:3.3rem;
+margin-bottom:12px;
+}
+
+header span{
+color:#d63384;
+}
+
+header p{
+max-width:550px;
+font-size:1rem;
+opacity:.8;
+}
+
+.hero-buttons{
+margin-top:30px;
+display:flex;
+gap:16px;
+}
+
+.btn{
+padding:12px 26px;
+border-radius:30px;
+font-size:.9rem;
+text-decoration:none;
+transition:.3s;
+}
+
+.primary{
+background:#d63384;
+color:white;
+box-shadow:0 10px 25px rgba(214,51,132,.3);
+}
+
+.primary:hover{transform:translateY(-4px)}
+
+.secondary{
+border:2px solid #d63384;
+color:#d63384;
+}
+
+
+section{
+padding:100px 10%;
+}
+
+h2{
+text-align:center;
+font-family:'Playfair Display',serif;
+font-size:2.4rem;
+margin-bottom:45px;
+}
+
+
+.about{
+max-width:750px;
+margin:auto;
+text-align:center;
+}
+
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:10px;
+max-width:1200px;
+margin:auto;
+}
+
+.skill{
+background:white;
+padding:18px;
+border-radius:14px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.06);
+font-size:.9rem;
+transition:.3s;
+}
+
+.skill:hover{transform:translateY(-6px)}
+
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:28px;
+}
+
+.project-card{
+background:white;
+padding:28px;
+border-radius:18px;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+transition:.35s;
+position:relative;
+overflow:hidden;
+}
+
+.project-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:#d63384;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-card h3{
+font-family:'Playfair Display',serif;
+margin-bottom:10px;
+}
+
+.project-buttons{
+margin-top:16px;
+display:flex;
+gap:10px;
+}
+
+.project-buttons a{
+text-decoration:none;
+font-size:.8rem;
+padding:6px 12px;
+border-radius:20px;
+background:#ffe0ef;
+color:#3d2b35;
+}
+
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+max-width:800px;
+margin:50px auto 0;
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:white;
+padding:20px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+.stat h3{
+color:#d63384;
+font-size:1.6rem;
+}
+.contact{
+text-align:center;
+}
+
+.socials{
+margin-top:18px;
+display:flex;
+justify-content:center;
+gap:25px;
+}
+
+.socials a{
+text-decoration:none;
+color:#d63384;
+font-weight:500;
+}
+
+
+footer{
+margin-top:60px;
+padding:25px;
+text-align:center;
+background:#ffd6e8;
+font-size:.85rem;
+}
+
+
+@media(max-width:768px){
+header h1{font-size:2.4rem}
+nav ul{display:none}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Paula</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<header>
+<h1>Hello, I'm <span>Paula Opurum</span></h1>
+<p>
+A 200-level developer passionate about building modern web applications and solving real-world problems through clean, creative code.
+</p>
+
+<div class="hero-buttons">
+<a href="#projects" class="btn primary">View Projects</a>
+<a href="#contact" class="btn secondary">Contact Me</a>
+</div>
+
+<div class="stats">
+<div class="stat">
+<h3>4+</h3>
+<p>Projects Built</p>
+</div>
+
+<div class="stat">
+<h3>5+</h3>
+<p>Technologies</p>
+</div>
+
+<div class="stat">
+<h3>2028</h3>
+<p>Expected Graduation</p>
+</div>
+</div>
+
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="about">
+<p>
+I'm a developer focused on building elegant and user-friendly digital experiences. I enjoy combining creativity and technology to design applications that are both functional and visually appealing. My interests include web development, UI design, and building tools that make student life easier.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="skills-grid">
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Bootstrap</div>
+<div class="skill">Java</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Featured Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+<h3>Study Buddy App</h3>
+<p>A collaborative platform designed to help students find study partners, schedule sessions, and share resources.</p>
+<div class="project-buttons">
+
+</div>
+</div>
+
+<div class="project-card">
+<h3>React E-Commerce App</h3>
+<p>An interactive shopping cart application built with React Context API and React Router.</p>
+<div class="project-buttons">
+
+</div>
+</div>
+
+<div class="project-card">
+<h3>Restaurant Website</h3>
+<p>A responsive restaurant website with interactive features built using HTML, CSS, Bootstrap, and JavaScript.</p>
+<div class="project-buttons">
+
+</div>
+</div>
+
+<div class="project-card">
+<h3>Delivery App Design</h3>
+<p>A structured multi-service delivery platform concept including restaurants and supermarkets.</p>
+<div class="project-buttons">
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="contact">
+<p>Email: opurumpaula12@gmail.com</p>
+
+<div class="socials">
+<a href="https://github.com/Paula-Opurum">GitHub</a>
+<a href="https://www.linkedin.com/in/paula-opurum-541316356">LinkedIn</a>
+
+</div>
+</div>
+</section>
+
+<footer>
+© 2026 Paula Opurum • Built with 💗 and code
+</footer>
+
+</body>
+</html>
